@@ -1,3 +1,15 @@
+@import url(http://fonts.googleapis.com/css?family=Comfortaa:400,700,300);
+
+$body-bg:                       #62C3C3;
+$font-family:                   'Comfortaa', cursive, sans-serif;
+$jumbotron-bg:                  white;
+$navbar-default-brand-color:    #e87171;
+$navbar-default-link-hover-bg:  #62C3C3;
+$brand-primary:                 #c0392b;
+$jumbotron-padding:             5px;
+$navbar-height:                 45px;
+$navbar-default-bg:             white;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -14,6 +26,7 @@ $gray-medium-light: #eaeaea;
 /* universal */
 
 body {
+  font-family: 'Comfortaa', cursive;
   padding-top: 60px;
 }
 
@@ -36,6 +49,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+
 }
 
 h1 {
@@ -50,13 +64,18 @@ h2 {
   letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
-  font-weight: normal;
+  font-weight: bold;
   color: $gray-light;
 }
 
 p {
+  font-weight: bold;
   font-size: 1.1em;
   line-height: 1.7em;
+}
+
+a {
+  font-weight: 500;
 }
 
 
@@ -66,15 +85,32 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: white;
+  color: #62C3C3;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 9px;
+  padding-top: 13px;
   font-weight: bold;
   &:hover {
-    color: white;
+    color: #16a085;
     text-decoration: none;
   }
+}
+
+/* navbar */
+
+.navbar-fixed-top {
+  border-width: 0 0 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+  font-size: 1.17em;
+}
+
+/* buttons */
+
+.btn-sm, .btn-group-sm > .btn {
+  padding: 2px 20px;
+  font-size: 17px;
 }
 
 /* footer */

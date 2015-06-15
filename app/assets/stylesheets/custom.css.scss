@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Comfortaa:400,700,300);
 
-$body-bg:                       #e7e9ec;
+$body-bg:                       #F7FEFF;
 $font-family:                   'Comfortaa', cursive, sans-serif;
 $jumbotron-bg:                  white;
 $navbar-default-brand-color:    white;
@@ -8,7 +8,7 @@ $navbar-default-link-hover-bg:  #62C3C3;
 $brand-primary:                 #c0392b;
 $jumbotron-padding:             5px;
 $navbar-height:                 45px;
-$navbar-default-bg:             #15A1BA;
+$navbar-default-bg:             #2BFCF4;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -85,14 +85,14 @@ a {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: white;
+  color: #222;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 13px;
   font-weight: bold;
   &:hover {
     color: white;
-    background-color: rgba(233, 248, 255, 0.26);
+    background-color: #007479;
     text-decoration: none;
   }
 }

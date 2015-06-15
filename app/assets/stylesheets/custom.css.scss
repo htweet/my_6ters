@@ -1,14 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Comfortaa:400,700,300);
 
-$body-bg:                       #62C3C3;
+$body-bg:                       #e7e9ec;
 $font-family:                   'Comfortaa', cursive, sans-serif;
 $jumbotron-bg:                  white;
-$navbar-default-brand-color:    #e87171;
+$navbar-default-brand-color:    white;
 $navbar-default-link-hover-bg:  #62C3C3;
 $brand-primary:                 #c0392b;
 $jumbotron-padding:             5px;
 $navbar-height:                 45px;
-$navbar-default-bg:             white;
+$navbar-default-bg:             #15A1BA;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -85,13 +85,14 @@ a {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #62C3C3;
+  color: white;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 13px;
   font-weight: bold;
   &:hover {
-    color: #16a085;
+    color: white;
+    background-color: rgba(233, 248, 255, 0.26);
     text-decoration: none;
   }
 }
@@ -226,4 +227,16 @@ input {
 #session_remember_me {
   width: auto;
   margin-left: 0;
+}
+
+/* Users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
 }

@@ -5,7 +5,7 @@ $font-family:                   'Comfortaa', cursive, sans-serif;
 $jumbotron-bg:                  white;
 $navbar-default-brand-color:    white;
 $navbar-default-link-color:     #A5A5A5;
-$navbar-default-link-hover-bg:  #FFF5F5;
+$navbar-default-link-hover-bg:  #F0F0F0;
 $jumbotron-padding:             5px;
 $navbar-height:                 45px;
 $navbar-default-bg:             white;
@@ -92,7 +92,7 @@ a {
   font-weight: bold;
   &:hover {
     color: #222;
-    background-color: #FFF5F5;
+    background-color: #F0F0F0;
     text-decoration: none;
   }
 }
@@ -112,6 +112,12 @@ a {
 
 .navbar-right {
   background-color: rgb(24, 38, 56);
+}
+
+/* jumbotron */
+
+.home .jumbotron {
+  background-image: url(/jbtron.jpg);
 }
 
 /* buttons */
@@ -197,6 +203,44 @@ aside {
 
 .gravatar_edit {
   margin-top: 15px;
+}
+
+.stats {
+  overflow: auto;
+  margin-top: 0;
+  padding: 0;
+  a {
+    float: left;
+    padding: 0 10px;
+    border-left: 1px solid $gray-lighter;
+    color: gray;
+    &:first-child {
+      padding-left: 0;
+      border: 0;
+    }
+    &:hover {
+      text-decoration: none;
+      color: blue;
+    }
+  }
+  strong {
+    display: block;
+  }
+}
+
+.user_avatars {
+  overflow: auto;
+  margin-top: 10px;
+  .gravatar {
+    margin: 1px 1px;
+  }
+  a {
+    padding: 0;
+  }
+}
+
+.users.follow {
+  padding: 0;
 }
 
 /* forms */

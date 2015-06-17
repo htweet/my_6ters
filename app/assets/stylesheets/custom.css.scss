@@ -288,6 +288,11 @@ span.picture {
   }
 }
 
+/* panel */
 .panel-body.shrink {
   padding: 5px 5px;
+}
+
+.no-border {
+  border-color: rgba(221, 221, 221, 0);
 }

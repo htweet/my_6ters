@@ -2,12 +2,16 @@
 <div class="container">
   <div class="row">
     <aside class="col-md-4">
-      <section class="user_info">
-        <%= render 'shared/user_info' %>
-      </section>
-      <section class="micropost_form">
-        <%= render 'shared/micropost_form' %>
-      </section>
+      <div class="panel panel-default no-border">
+        <div class="panel-body">
+          <section class="user_info">
+            <%= render 'shared/user_info' %>
+          </section>
+          <section class="micropost_form">
+            <%= render 'shared/micropost_form' %>
+          </section>
+        </div>
+      </div>
     </aside>
     <div class="col-md-6">
       <%= render 'shared/feed' %>

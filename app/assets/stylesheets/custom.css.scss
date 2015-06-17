@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Comfortaa:400,700,300);
 
-$body-bg:                       #F7FEFF;
+$body-bg:                       #FFF9F9;
 $font-family:                   'Comfortaa', cursive, sans-serif;
 $jumbotron-bg:                  white;
 $navbar-default-brand-color:    white;
@@ -8,7 +8,7 @@ $navbar-default-link-hover-bg:  #62C3C3;
 $brand-primary:                 #c0392b;
 $jumbotron-padding:             5px;
 $navbar-height:                 45px;
-$navbar-default-bg:             #2BFCF4;
+$navbar-default-bg:             white;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -239,4 +239,54 @@ input {
     padding: 10px 0;
     border-bottom: 1px solid $gray-lighter;
   }
+}
+
+/* microposts */
+
+.microposts {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 0 0;
+  }
+  .user {
+    margin-top: 5em;
+    padding-top: 0;
+  }
+  .content {
+    display: block;
+    margin-left: 60px;
+    img {
+      display: block;
+      padding: 5px 0;
+    }
+  }
+  .timestamp {
+    color: $gray-light;
+    display: block;
+    margin-left: 60px;
+  }
+  .gravatar {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+}
+
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+span.picture {
+  margin-top: 10px;
+  input {
+    border: 0;
+  }
+}
+
+.panel-body.shrink {
+  padding: 5px 5px;
 }

@@ -4,19 +4,19 @@
   <div class="col-md-4 col-md-offset-4">
   	<div class="panel panel-default">
 
-  		<div class="panel-heading">
-				<h1>Forgot password</h1>
-			</div>
-  		<div class="panel-body">
-		  	<div class="form-group">
-			    <%= form_for(:password_reset, url: password_resets_path) do |f| %>
-			      <%= f.label :email_address %>
-			      <%= f.email_field :email, class: 'form-control' %>
-		  	</div>
-
-		      <%= f.submit "Submit", class: "btn btn-primary" %>
-		    <% end %>
-		  </div>
+		<div class="panel-heading">
+			<h1>Forgot password</h1>
 		</div>
+		<div class="panel-body">
+	  	<div class="form-group">
+		    <%= form_for(:password_reset, url: password_resets_path) do |f| %>
+		      <%= f.label :email_address %>
+		      <%= f.email_field :email, class: 'form-control' %>
+	  	</div>
+
+	      <%= f.submit "Submit", class: "btn btn-primary" %>
+	    <% end %>
+	  </div>
+	</div>
   </div>
 </div>

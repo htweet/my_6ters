@@ -1,11 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Comfortaa:400,700,300);
 
-$body-bg:                       #FFF9F9;
+$body-bg:                       #D6D6D7;
 $font-family:                   'Comfortaa', cursive, sans-serif;
 $jumbotron-bg:                  white;
 $navbar-default-brand-color:    white;
+$navbar-default-link-color:     #A5A5A5;
 $navbar-default-link-hover-bg:  #FFF5F5;
-$brand-primary:                 #c0392b;
 $jumbotron-padding:             5px;
 $navbar-height:                 45px;
 $navbar-default-bg:             white;
@@ -85,7 +85,7 @@ a {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #222;
+  color: #A5A5A5;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 13px;
@@ -101,10 +101,17 @@ a {
 
 .navbar-fixed-top {
   border-width: 0 0 0;
+  border-bottom: 5px solid white;
+  box-shadow: 0 0 4px #969696;
+  background-image: -webkit-linear-gradient(top, #133056 0%, #000000 100%);
 }
 
 .navbar-default .navbar-nav > li > a {
   font-size: 1.17em;
+}
+
+.navbar-right {
+  background-color: rgb(24, 38, 56);
 }
 
 /* buttons */
@@ -112,6 +119,10 @@ a {
 .btn-sm, .btn-group-sm > .btn {
   padding: 2px 20px;
   font-size: 17px;
+}
+
+.btn-primary {
+  background-image: -webkit-linear-gradient(top, #A5CBFF 0%, #00629E 100%);
 }
 
 /* footer */
@@ -276,8 +287,8 @@ input {
 
 aside {
   textarea {
-    height: 100px;
-    margin-bottom: 5px;
+    height: 30px;
+    margin-bottom: 0;
   }
 }
 

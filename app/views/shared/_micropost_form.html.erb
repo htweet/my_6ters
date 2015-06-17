@@ -1,12 +1,17 @@
 <div class="panel panel-default">
-	<div class="panel-footer">
+	<div class="panel-body">
 		<%= form_for(@micropost, html: { multipart: true }) do |f| %>
 		  <%= render 'shared/error_messages', object: f.object %>
-		  <div class="field">
-		    <%= f.text_area :content, placeholder: "Write something..." %>
-		    <p><small>Maximum 140 characters</small></p>
-		  </div>
-		  <%= f.submit "Post", class: "btn btn-primary" %>
+	  <div class="field">
+	    <%= f.text_area :content, placeholder: "Write something..." %>
+	    <p><small>Maximum 140 characters</small></p>
+	  </div>
+</div>
+</div>
+
+<div class="panel panel-default">
+	<div class="panel-body">
+			<%= f.submit "Post", class: "btn btn-primary" %>
 		  <span class="picture">
 		    <%= f.file_field :picture, accept: 'image/jpeg,image/jpg,image/gif,image/png' %>
 		  </span>

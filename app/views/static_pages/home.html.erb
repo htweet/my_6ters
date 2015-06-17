@@ -1,23 +1,28 @@
-<% if logged_in? %>
 <div class="container">
+  <% if logged_in? %>
   <div class="row">
     <aside class="col-md-4">
+      
       <div class="panel panel-default no-border">
         <div class="panel-body">
           <section class="user_info">
             <%= render 'shared/user_info' %>
           </section>
-          <section class="micropost_form">
-            <%= render 'shared/micropost_form' %>
-          </section>
         </div>
       </div>
+        
     </aside>
     <div class="col-md-6">
+
+      <section class="micropost_form">
+        <%= render 'shared/micropost_form' %>
+      </section>
+
       <%= render 'shared/feed' %>
     </div>
   </div>
 <% else %>
+</div class="container-fluid">
 	<div class="center jumbotron">
 	  <h1>Welcome to 6TERS,</br><small>(it's all about Dating)</small></h1>
 
@@ -30,8 +35,11 @@
 
 	  <%= link_to "Sign Up!", signup_path, class: "btn btn-lg btn-primary btn-sm" %>
 	</div>
-
-	<%= link_to image_tag("rails.png", alt: "Rails logo"),
-	            'http://rubyonrails.org/' %>
 </div>
+
+<div class="center">
+	<%= link_to image_tag("fone.png", alt: "Rails logo"),
+	            '#' %>
+            </div>
 <% end %>
+</div>

@@ -120,14 +120,20 @@ a {
 
 /* buttons */
 
+.btn-primary {
+  background-color: #FF7373;
+  border-color: #DDDDDD;
+}
+
 .btn-sm, .btn-group-sm > .btn {
   padding: 2px 20px;
   font-size: 17px;
 }
 
-.btn-primary {
-  background-image: -webkit-linear-gradient(top, #A5CBFF 0%, #00629E 100%);
+.post-btn {
+  max-width: 15%;
 }
+
 
 /* footer */
 
@@ -347,7 +353,7 @@ span.picture {
   }
 }
 
-.col-md-6.mp.bg {
+.mp.bg {
   background-color: white;
   border-radius: 4px;
 }

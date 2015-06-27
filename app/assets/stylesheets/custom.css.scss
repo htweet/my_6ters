@@ -1,7 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Comfortaa:400,700,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400);
 
-$body-bg:                       #D6D6D7;
-$font-family:                   'Comfortaa', cursive, sans-serif;
+$body-bg:                       #FFB4AD;
+$font-family:                   'Open Sans', sans-serif;
 $jumbotron-bg:                  white;
 $navbar-default-brand-color:    white;
 $navbar-default-link-color:     #A5A5A5;
@@ -26,7 +26,7 @@ $gray-medium-light: #eaeaea;
 /* universal */
 
 body {
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Open Sans', sans-serif;
   padding-top: 60px;
 }
 
@@ -54,14 +54,12 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 3em;
-  letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
 }
 
 h2 {
   font-size: 1.1em;
-  letter-spacing: 1px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
@@ -171,7 +169,7 @@ footer {
 
 aside {
   section.user_info {
-    margin-top: 20px;
+    margin-top: 0;
   }
   section {
     padding: 10px 0;
@@ -209,6 +207,8 @@ aside {
   overflow: auto;
   margin-top: 0;
   padding: 0;
+  border-top: 1px solid #FAD9D9;
+  background-color: rgb(239, 242, 245);
   a {
     float: left;
     padding: 0 10px;
@@ -220,7 +220,7 @@ aside {
     }
     &:hover {
       text-decoration: none;
-      color: blue;
+      color: #C37C76;
     }
   }
   strong {
@@ -303,7 +303,11 @@ input {
   list-style: none;
   padding: 0;
   li {
-    padding: 0 0;
+    padding: 10px 0;
+    border-top: 1px solid #e8e8e8;
+    background-color: rgb(239, 242, 245);
+    margin: 5px 0;
+    border-radius: 3px;
   }
   .user {
     margin-top: 5em;
@@ -331,8 +335,8 @@ input {
 
 aside {
   textarea {
-    height: 30px;
-    margin-bottom: 0;
+    height: 100px;
+    margin-bottom: 5px;
   }
 }
 
@@ -341,6 +345,11 @@ span.picture {
   input {
     border: 0;
   }
+}
+
+.col-md-6.mp.bg.show {
+  background-color: white;
+  border-radius: 4px;
 }
 
 /* panel */

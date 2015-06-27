@@ -1,6 +1,5 @@
-<div class="panel panel-default">
-    <div class="panel-body shrink">
-    	<li id="micropost-<%= micropost.id %>">
+
+<li id="micropost-<%= micropost.id %>">
   <%= link_to gravatar_for(micropost.user, size: 50), micropost.user %>
   <span class="user"><%= link_to micropost.user.name, micropost.user %></span>
   <span class="timestamp">
@@ -14,5 +13,3 @@
   	<%= image_tag micropost.picture.url if micropost.picture? %>
   </span>
 </li>
-</div>
-</div>

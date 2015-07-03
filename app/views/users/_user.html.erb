@@ -1,14 +1,18 @@
 <div id="users" class="transitions-enabled">
-	<div class="box panel panel-default">
-		<div class="panel-body">
-			<li>
-			  <%= gravatar_for user, size: 150 %>
-			  <%= link_to user.name, user %>
-			  <% if current_user.admin? && !current_user?(user) %>
-			    | <%= link_to "delete", user, method: :delete,
-			                                  data: { confirm: "You sure?" } %>
-			  <% end %>
-			</li>
-		</div>
+	<div class="box">
+		<li>
+		  <%= link_to gravatar_for user, size: 150 %>
+		  <%= link_to user.name, user %>
+		  <section class="user_info">
+        <%= render 'follow_form' if logged_in? %>
+      </section>
+      <section class="stats">
+        <%= render 'shared/stats' %>
+      </section>
+		  <% if current_user.admin? && !current_user?(user) %>
+		    | <%= link_to "delete", user, method: :delete,
+		                                  data: { confirm: "You sure?" } %>
+		  <% end %>
+		</li>
 	</div>
 </div>

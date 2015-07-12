@@ -49,6 +49,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+  color: #9C9C9C;
 
 }
 
@@ -190,7 +191,7 @@ aside {
   }
   section {
     padding: 10px 0;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     &:first-child {
       border: 0;
       padding-top: 0;
@@ -336,6 +337,7 @@ input {
     img {
       display: block;
       padding: 5px 0;
+      max-width: 100%;
     }
   }
   .timestamp {

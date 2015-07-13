@@ -25,6 +25,17 @@
         <ol class="microposts">
           <%= render @microposts %>
         </ol>
+        
+      <% else %>
+
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h1><small>Follow at least 5 People to start enjoying 6TERS</small></h1>
+          </div>
+        </div>
+
+
+
         <%= will_paginate @microposts %>
       <% end %>
     </div>

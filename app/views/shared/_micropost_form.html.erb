@@ -4,12 +4,12 @@
 
 		<div class="panel-body">
 		  <div class="field">
-		    <%= f.text_area :content, placeholder: "Write something...Maximum 140 characters" %>
+		    <%= f.text_area :content, placeholder: "Write something...Maximum 250 characters" %>
 		  </div>
 		</div>
 		<div class="panel-footer">
 		  <span class="picture">
-		    <!-- <%= f.file_field :picture, accept: 'image/jpeg,image/jpg,image/gif,image/png' %> -->
+		    <%= f.file_field :picture, accept: 'image/jpeg,image/jpg,image/gif,image/png' %>
 		    <%= f.submit "Post", class: "btn btn-primary post-btn" %>
 		  </span>
 		</div>

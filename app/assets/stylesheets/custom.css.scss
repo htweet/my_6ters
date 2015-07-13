@@ -138,8 +138,14 @@ a {
 }
 
 .post-btn {
-  max-width: 30%;
-  min-width: 60%;
+  max-width: 100px;
+  min-width: 100px;
+}
+.comment-btn {
+  max-width: 100px;
+  min-width: 100px;
+  line-height: 0.5;
+  float: right !important;
 }
 
 
@@ -270,8 +276,16 @@ input, textarea, select, .uneditable-input {
   @include box_sizing;
 }
 
+textarea.form-control {
+  height: 35px;
+}
+
 input {
   height: auto !important;
+}
+
+.form-group.comment-form {
+  margin: 10px 60px 50px;
 }
 
 #error_explanation {
@@ -287,6 +301,11 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+.form-control {
+  padding: 3px 12px;
+  font-size: 20px;
 }
 
 .checkbox {
@@ -322,8 +341,6 @@ input {
   padding: 0;
   li {
     padding: 10px 0;
-    border-top: 1px solid #E5E5E5;
-    background-color: rgb(239, 242, 245);
     margin: 5px 0;
     border-radius: 3px;
   }
@@ -336,8 +353,8 @@ input {
     margin-left: 60px;
     img {
       display: block;
-      padding: 5px 0;
-      max-width: 100%;
+      padding: 5px 10px 5px 0;
+      width: 100%
     }
   }
   .timestamp {
@@ -349,6 +366,14 @@ input {
     float: left;
     margin-right: 10px;
     margin-top: 5px;
+  }
+}
+
+.post_comment {
+  border-bottom: 1px solid #fad9d9;
+  background-color: #f7fafd;
+  &:hover {
+    background-color: #FFE9E7;
   }
 }
 

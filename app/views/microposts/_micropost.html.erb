@@ -12,26 +12,4 @@
   <p><span class="content"><%= micropost.content %>
   	<%= image_tag micropost.picture.url if micropost.picture? %></p>
 </li>
-
-<%= render 'comments/new_comments_form' %>
-
-<% micropost.comments.each do |comment| %>
-<div class="media">
-  <div class="media-left">
-    <a href="#"
-     <img class="media-object" src="<%= comment.gravatar %>">
-    </a>
-  </div>
-  <div class="media-body">
-    <h4 class="media-heading"><%= link_to micropost.user.name, micropost.user %></h4>
-    <span class="timestamp">
-    Posted <%= time_ago_in_words(comment.created_at) %> ago
-    <% if current_user?(comment.user) %>
-      <%= link_to "delete", comment, method: :delete,
-                                       data: { confirm: "You sure?" } %>
-    <% end %>
-    <%= comment.body %>
-  </div>
-</div>
-<% end %>
 </div>
